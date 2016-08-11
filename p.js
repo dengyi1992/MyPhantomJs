@@ -12,10 +12,10 @@ var urls=[];
 urls.push(huya);
 urls.push(baidu);
 urls.push(lc);
-for(var i=0;i<urls.length;i++){
+for(var i=0;i<10;i++){
     var childArgs = [
         path.join(__dirname, 'loadspeed.js'),
-        urls[i]
+        lc+"?"+i
     ];
 
     childProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {
