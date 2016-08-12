@@ -55,6 +55,23 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+var request = require("request");
+var HY = require('./model/HY');
+new HY("diaosinixi");
+var options = { method: 'GET',
+  url: 'http://120.27.94.166:2999/getRooms',
+  qs: { platform: 'huya', topn: '30' },
+  headers:
+  { 'postman-token': 'c6513da0-504a-e5b0-b078-c2896a19d92e',
+    'cache-control': 'no-cache' } };
+
+request(options, function (error, response, body) {
+  if (error){
+    return console.log(error.message);
+  }
+
+  console.log(body);
+});
 
 
 module.exports = app;

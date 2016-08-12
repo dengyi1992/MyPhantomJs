@@ -7,7 +7,7 @@ var phantomjs = require('phantomjs');
 var binPath = phantomjs.path;
 var huya = "http://www.jd.com/";
 var baidu = "https://www.baidu.com/";
-var lc = "http://localhost:3000/hy";
+var lc = "http://localhost:3000/hy?topsid=77690206&subsid=2520331682&yyuid=558802298";
 var urls=[];
 urls.push(huya);
 urls.push(baidu);
