@@ -16,7 +16,7 @@ HY.prototype.start=function () {
     var options = { method: 'GET',
         url: 'http://www.huya.com/'+this.roomid
         };
-
+    var hy=this;
     request(options, function (error, response, body) {
         if (error) {
             return console.log(error.message);
@@ -32,7 +32,7 @@ HY.prototype.start=function () {
             // console.log(body);
             var lc = "http://localhost:3000/hy?topsid=" +topsid+
                 "&subsid=" +subsid+
-                "&yyuid="+yyuid;
+                "&yyuid="+yyuid+"&roomid="+hy.roomid;
             var childArgs = [
                 path.join(__dirname, 'loadspeed.js'),
                 lc
