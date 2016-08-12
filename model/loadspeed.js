@@ -13,10 +13,10 @@ if (system.args.length === 1) {
 t = Date.now();
 address = system.args[1];
 page.open(address, function(status) {
-    window.setInterval(function () {
-        page.render("tutu"+ new Date().getTime() +
-            ".png");
-    }, 10000);
+    // window.setInterval(function () {
+    //     page.render("tutu"+ new Date().getTime() +
+    //         ".png");
+    // }, 10000);
     var title = page.evaluate(function () {
         return document.title;
     });

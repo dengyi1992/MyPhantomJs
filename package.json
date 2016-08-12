@@ -13,6 +13,7 @@
     "express": "~4.13.4",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
+    "node-schedule": "^1.1.1",
     "phantomjs": "^2.1.7",
     "request": "latest",
     "serve-favicon": "~2.3.0"
