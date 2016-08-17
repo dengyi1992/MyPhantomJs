@@ -21,6 +21,7 @@ HY.prototype.start=function () {
         if (error) {
             return console.log(error.message);
         };
+        console.log(body);
         try{
             var rexYyuid = "var l_p = '[0-9]{3,15}";
             var rexSubTop = "http://weblbs.yystatic.com/s/[0-9]{2,15}/[0-9]{2,15}/huyacoop.swf";

@@ -29,8 +29,8 @@
       <file leaf-file-name="HY.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/HY.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="378">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -607,7 +607,7 @@
       <workItem from="1471336297256" duration="1784000" />
       <workItem from="1471340888081" duration="603000" />
       <workItem from="1471397828234" duration="3452000" />
-      <workItem from="1471414916787" duration="988000" />
+      <workItem from="1471414916787" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="adssa">
       <created>1470909546087</created>
@@ -644,11 +644,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470992051956</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完善">
+      <created>1471415909093</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1471415909093</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27951000" />
+    <option name="totallyTimeSpent" value="28404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
@@ -882,8 +889,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/HY.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="378">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
