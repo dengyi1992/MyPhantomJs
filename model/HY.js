@@ -33,6 +33,7 @@ HY.prototype.start=function () {
             var lc = "http://localhost:3000/hy?topsid=" +topsid+
                 "&subsid=" +subsid+
                 "&yyuid="+yyuid+"&roomid='"+hy.roomid+"'";
+            console.log(lc);
             var childArgs = [
                 path.join(__dirname, 'loadspeed.js'),
                 lc
