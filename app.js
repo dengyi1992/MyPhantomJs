@@ -63,7 +63,7 @@ var HY = require('./model/HY');
 var options = {
     method: 'GET',
     url: 'http://120.27.94.166:2999/getRooms',
-    qs: {platform: 'huya', topn: '500'},
+    qs: {platform: 'huya', topn: '1000'},
     headers: {
         'postman-token': 'c6513da0-504a-e5b0-b078-c2896a19d92e',
         'cache-control': 'no-cache'
