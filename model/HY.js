@@ -5,13 +5,14 @@ var path = require('path');
 var childProcess = require('child_process');
 var phantomjs = require('phantomjs');
 var binPath = phantomjs.path;
+var request = require("request");
+
 var cheerio =require('cheerio');
 function HY(roomid) {
     this.roomid=roomid;
     this.start()
 }
 HY.prototype.start=function () {
-    var request = require("request");
 
     var options = { method: 'GET',
         url: 'http://www.huya.com/'+this.roomid
@@ -24,12 +25,14 @@ HY.prototype.start=function () {
         // console.log(body);
         try{
             var rexYyuid = "var l_p = '[0-9]{3,15}";
-            var rexSubTop = "http://weblbs.yystatic.com/s/[0-9]{2,15}/[0-9]{2,15}/huyacoop.swf";
+            // var rexSubTop = "http://weblbs.yystatic.com/s/[0-9]{2,15}/[0-9]{2,15}/huyacoop.swf";
             var yyuid = body.match(rexYyuid)[0].substring("var l_p = '".length);
-            var match = body.match(rexSubTop)[0];
-            var topsid = match.match("s/[0-9]{3,15}")[0].slice(2);
-            var subsid = match.match("[0-9]{3,15}/h")[0];
-            subsid=subsid.substring(0,subsid.length-2);
+            // var match = body.match(rexSubTop)[0];
+            // var topsid = match.match("s/[0-9]{3,15}")[0].slice(2);
+            // var subsid = match.match("[0-9]{3,15}/h")[0];
+            // subsid=subsid.substring(0,subsid.length-2);
+            var topsid=body.match("\"chTopId\" : \"[0-9]{1,15}")[0].substring("\"chTopId\" : \"".length);
+            var subsid=body.match("\"subChId\" : \"[0-9]{1,15}")[0].substring("\"subChId\" : \"".length);
             // console.log(body);
             var lc = "http://localhost:3000/hy?topsid=" +topsid+
                 "&subsid=" +subsid+
